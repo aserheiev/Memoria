@@ -1,4 +1,4 @@
-package org.eelcorp;
+package org.eelcorp.ui;
 
 import javax.swing.*;
 import java.awt.*;

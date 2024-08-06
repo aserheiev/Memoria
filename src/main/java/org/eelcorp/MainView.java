@@ -1,6 +1,8 @@
 package org.eelcorp;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import org.eelcorp.ui.MainPanel;
+import org.eelcorp.ui.SidebarPanel;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

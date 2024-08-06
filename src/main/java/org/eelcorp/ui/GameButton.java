@@ -1,4 +1,6 @@
-package org.eelcorp;
+package org.eelcorp.ui;
+
+import org.eelcorp.Controller;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,7 +12,6 @@ public class GameButton extends JButton {
     private final String CHANGED_ICON_PATH;
     private ActionListener delayListener;
     private int currentIcon = 0; // 0 = default, 1 = changed
-
 
     public GameButton(String path) {
         CHANGED_ICON_PATH = path;
@@ -69,17 +70,16 @@ public class GameButton extends JButton {
     }
 
 
-    Runnable disableButtonWithTimer = () -> {
+    public Runnable disableButtonWithTimer = () -> {
         setEnabled(false);
 
-        // Create a timer that will re-enable the button after 3 seconds (3000 milliseconds)
         Timer timer = new Timer(2000, event -> {
             setEnabled(true);
             swapIcon();
             Controller.guessInProgress = false;
         });
 
-        // Ensure the timer only fires once
+
         timer.setRepeats(false);
         timer.start();
     };

@@ -1,5 +1,8 @@
 package org.eelcorp;
 
+import org.eelcorp.ui.GameButton;
+import org.eelcorp.ui.SidebarPanel;
+
 import javax.swing.*;
 import java.io.File;
 import java.util.*;

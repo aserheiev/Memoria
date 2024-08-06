@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Memoria">
+    <output-path>$PROJECT_DIR$/out/artifacts/Memoria</output-path>
+    <root id="archive" name="Memoria.jar" />
+  </artifact>
+</component>

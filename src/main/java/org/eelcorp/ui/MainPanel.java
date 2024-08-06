@@ -1,6 +1,7 @@
-package org.eelcorp;
+package org.eelcorp.ui;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import org.eelcorp.MainView;
 
 import javax.swing.*;
 import java.awt.*;
